@@ -1,0 +1,121 @@
+@media  screen and (max-width: 1280px){
+    .container{
+        width: calc((1440 / 1440) * 100%);
+    }
+    .navigation a img{
+        padding: 0px 20px;
+    }
+}
+/* màn hình lớn nhất là 1114px */
+@media  screen and (max-width: 1114px){
+    .dasboard-wp{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+    .menu-list{
+        opacity: 0;
+        visibility: hidden;
+        width: 30%;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        transform: translateX(-100%);
+        background-color: #fff;
+        min-height: 100%;
+    }
+    .show-menu{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        transition: all 0.3s;
+    }
+    .bars,.btn-exit{
+        display: block;
+    }
+    aside{
+        width: auto;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        z-index: 998;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(170, 64, 110, 0.5);
+        transition: opacity 0.2s, visibility 0s linear 0.2s;
+        opacity: 0;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .show-overlay{
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s;
+    }
+
+}
+/* màn hình lớn nhất là 800px */
+@media  screen and (max-width: 800px){
+    .dasboard-wp{
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-list{
+        width: 40%;
+    }
+}
+/* màn hình lớn nhất là 768px */
+@media  screen and (max-width: 768px){
+
+}
+
+/* màn hình lớn nhất là 600px */
+@media  screen and (max-width: 600px){
+
+}
+
+/* màn hình lớn nhất là 414px */
+@media  screen and (max-width: 414px){
+    .dasboard-wp{
+        grid-template-columns: 1fr;
+    }
+    .menu-list{
+        width: 60%;
+    }
+    .bars{
+        padding: 0px 15px;
+    }
+    .profile-out a:nth-child(1){
+        padding: 10px;
+    }
+    .profile-out a:nth-child(2){
+        padding: 20px 15px;
+    }
+    .marquee-wel, .logo{
+        display: none;
+    }
+    .marquee-wel-none{
+        display: block;
+    }
+    .dasboard-wp{
+        grid-template-columns: 1fr 1fr;
+    }
+    .dasboard{
+        width: auto;
+    }
+    article{
+        margin: 20px;
+    }
+}
+
+/* màn hình lớn nhất là 375px */
+@media  screen and (max-width: 375px){
+    .dasboard h4{
+        font-size: 13px;
+    }
+}
+
+/* màn hình lớn nhất là 320px */
+@media  screen and (max-width: 320px){
+
+}

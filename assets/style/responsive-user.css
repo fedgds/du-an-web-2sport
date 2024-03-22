@@ -1,0 +1,138 @@
+/* Màn hình lớn nhất là  1200px */
+@media  screen and (max-width: 1245px){
+    .form-search .input-search{
+        width: 15em;
+    }
+    .list-menu>li>a{
+        font-size: 13px;
+    }
+    .btn-bars{
+        display: block;
+    }
+    .chinhanh, .fa-receipt-none,.circle-user-none{
+        display: none;
+    }
+    .show-category{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+        transition: all 0.3s ease-in-out;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        z-index: 998;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(170, 64, 110, 0.5);
+        transition: opacity 0.2s, visibility 0s linear 0.2s;
+        opacity: 0;
+        visibility: hidden;
+        cursor: pointer;
+    }
+    .show-overlay{
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s;
+    }
+}
+/* Màn hình lớn nhất là  1024x */
+@media  screen and (max-width: 1024px){
+    .product-ins{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+/* Màn hình lớn nhất là  950px */
+@media  screen and (max-width: 950px){
+    .list-menu>li:nth-child(1){
+        display: none;
+    }
+    .fa-receipt-none{
+        display: block;
+    }
+}
+
+/* Màn hình lớn nhất là  800px */
+@media  screen and (max-width: 800px){
+    .product-ins{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .form-search{
+        height: 33px;
+    }
+    .fa-solid{
+        font-size: 20px;
+    }
+    .fa-search{
+        font-size: 15px;
+    }
+    .logo-web{
+        width: 80%;
+    }
+    .list-menu>li>a{
+        padding: 22px 5px;
+        font-size: 10px;
+    }
+    .category{
+        width: 35%;
+    }
+    .pre, .next{
+        padding: 10px;
+    }
+}
+/* Màn hình lớn nhất là  768px */
+@media  screen and (max-width: 768px){
+    .form-search .input-search{
+        width: 10em;
+    }
+}
+
+/* Màn hình lớn nhất là  600px */
+@media  screen and (max-width: 600px){
+    .product-ins{
+        grid-template-columns: 1fr 1fr;
+    }
+    .fa-bag,.circle-user-none{
+        display: block;
+    }
+    .circle-user, .list-menu>li:nth-child(2){
+        display: none;
+    }
+    .category{
+        width: 60%;
+    }
+}
+
+/* Màn hình lớn nhất là  414px */
+@media  screen and (max-width: 414px){
+    .category{
+        width: 65%;
+    }
+    .show-search{
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        visibility: visible;
+    }
+    
+}
+
+/* Màn hình lớn nhất là  375px */
+@media  screen and (max-width: 375px){
+    .search-wp{
+        display: none;
+    }
+    .logo-web, .search-res {
+        display: block;
+    }   
+}
+
+/* màn hình lớn nhất là  320px */
+@media  screen and (max-width: 320px){
+    .product-ins{
+        grid-template-columns: 1fr;
+    }
+    .category{
+        width: 70%;
+    }
+}
